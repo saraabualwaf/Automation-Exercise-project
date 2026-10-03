@@ -14,13 +14,15 @@ public class BaseClass {
 
     @BeforeMethod
     public void setUp() {
+    	
     	WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();				
         driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get("https://automationexercise.com/");
-        
-    }
+        String url="https://automationexercise.com/";
+		 driver.get(url); 
+		 } 
+		 
 
     @AfterMethod
     public void tearDown() {

@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="٢٠٢٦-١٠-٠٢T١٢:٠٦:١٥ IDT" name="Automation Exercise Suite" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٥٢ IDT" duration-ms="157013">
+  <suite started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٥:٤٩ IDT" name="Automation Exercise Suite" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٧:١١ IDT" duration-ms="81497">
     <groups>
     </groups>
-    <test started-at="٢٠٢٦-١٠-٠٢T١٢:٠٦:١٥ IDT" name="Workflows" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٥٢ IDT" duration-ms="157013">
+    <test started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٥:٤٩ IDT" name="Workflows" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٧:١١ IDT" duration-ms="81497">
       <class name="tests.PurchaseProduct">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PurchaseProduct@6025e1b6]" started-at="٢٠٢٦-١٠-٠٢T١٢:٠٦:١٥ IDT" name="setUp" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٦:٣٣ IDT" duration-ms="17698" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PurchaseProduct@6025e1b6]" started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٥:٤٩ IDT" name="setUp" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٠٠ IDT" duration-ms="10640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="PurchaseProduct()[pri:0, instance:tests.PurchaseProduct@6025e1b6]" started-at="٢٠٢٦-١٠-٠٢T١٢:٠٦:٣٣ IDT" name="PurchaseProduct" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٧:٤٦ IDT" duration-ms="72428" status="PASS">
+        <test-method signature="PurchaseProduct()[pri:0, instance:tests.PurchaseProduct@6025e1b6]" started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٠٠ IDT" name="PurchaseProduct" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٢٧ IDT" duration-ms="26805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PurchaseProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PurchaseProduct@6025e1b6]" started-at="٢٠٢٦-١٠-٠٢T١٢:٠٧:٤٦ IDT" name="tearDown" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٧:٤٦ IDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PurchaseProduct@6025e1b6]" started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٢٧ IDT" name="tearDown" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٢٨ IDT" duration-ms="721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.PurchaseProduct -->
       <class name="tests.RemoveAllProducts">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RemoveAllProducts@55fe41ea]" started-at="٢٠٢٦-١٠-٠٢T١٢:٠٧:٤٦ IDT" name="setUp" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٠٢ IDT" duration-ms="15873" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RemoveAllProducts@55fe41ea]" started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٢٨ IDT" name="setUp" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٣٩ IDT" duration-ms="11286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="RemoveAllProducts()[pri:0, instance:tests.RemoveAllProducts@55fe41ea]" started-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٠٢ IDT" name="RemoveAllProducts" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٥٢ IDT" duration-ms="50941" status="PASS">
+        <test-method signature="RemoveAllProducts()[pri:0, instance:tests.RemoveAllProducts@55fe41ea]" started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٦:٣٩ IDT" name="RemoveAllProducts" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٧:١٠ IDT" duration-ms="31229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveAllProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RemoveAllProducts@55fe41ea]" started-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٥٢ IDT" name="tearDown" finished-at="٢٠٢٦-١٠-٠٢T١٢:٠٨:٥٢ IDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RemoveAllProducts@55fe41ea]" started-at="٢٠٢٦-١٠-٠٣T٠٣:٤٧:١٠ IDT" name="tearDown" finished-at="٢٠٢٦-١٠-٠٣T٠٣:٤٧:١١ IDT" duration-ms="726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

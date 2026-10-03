@@ -11,7 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
 
     WebDriver driver;
-
+    WebDriverWait wait;
+    
     By SignupLogin=By.xpath("//a[text()=' Signup / Login']"); 
     By Email=By.xpath("//input[@data-qa='login-email']"); 
     By Password=By.xpath("//input[@data-qa='login-password']"); 
@@ -19,13 +20,13 @@ public class LoginPage {
     By loginsuccses=By.xpath("//a[text()=' Logged in as ']");
    
     public LoginPage(WebDriver driver) {
-        this.driver = driver;}
+        this.driver = driver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));}
+    
     
     
     public void  Login(String email,String password) {
         
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
 	    WebElement singin =wait.until(ExpectedConditions.elementToBeClickable(SignupLogin));
 
 	    singin.click();
@@ -40,14 +41,13 @@ public class LoginPage {
 	    
 	    WebElement login1 =wait.until(ExpectedConditions.elementToBeClickable(login));
 
-	    login1.click();   
+	    login1.click();    
 	    
     }
     
     
     public String verifylogin() {
-    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
+    	
          return wait.until(
              ExpectedConditions.visibilityOfElementLocated(loginsuccses)
          ).getText();

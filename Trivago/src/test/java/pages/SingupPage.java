@@ -12,9 +12,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SingupPage {
 
 WebDriver driver;
-
+WebDriverWait wait;
 public SingupPage(WebDriver driver) {
-    this.driver = driver;
+	this.driver=driver;
+	 wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	System.out.println("PAGE DRIVER = " + this.driver);
 }
     
   By SignupLogin=By.xpath("//a[text()=' Signup / Login']");
@@ -45,29 +48,26 @@ public SingupPage(WebDriver driver) {
   By country=By.xpath("//select[@id='country']"); 
   By message=By.xpath("//b[text()='Account Created!']"); 
   
+ 
   public void clickSignupLogin() {
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	   wait.until(ExpectedConditions.elementToBeClickable(SignupLogin)).click();
-
-	   
+	   wait.until(ExpectedConditions.elementToBeClickable(SignupLogin)).click();   
   }
 
   public void enterName(String name) {
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	 
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(SignupName)).sendKeys(name);
 	    
   }
 
   public void enterEmail(String email) {
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(SignupEmail)).sendKeys(email);
 		    
   }
 
   public void clickSignup() {
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
+	
 	   wait.until(ExpectedConditions.elementToBeClickable(SignupButton)).click();
 
   }
@@ -82,8 +82,6 @@ public SingupPage(WebDriver driver) {
 	
 	
   public void enterAccountInformation() {
-
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	   wait.until(ExpectedConditions.elementToBeClickable(MRsButton)).click();
 

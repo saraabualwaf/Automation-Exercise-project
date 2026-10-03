@@ -3,6 +3,13 @@
 <suite name="Failed suite [Automation Exercise Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Workflows(failed)">
     <classes>
+      <class name="tests.RemoveAllProducts">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="RemoveAllProducts"/>
+        </methods>
+      </class> <!-- tests.RemoveAllProducts -->
       <class name="tests.PurchaseProduct">
         <methods>
           <include name="tearDown"/>

@@ -13,19 +13,21 @@ public class logoutPage {
 	 By logout = By.xpath("//a[text()=' Logout']");	
 	
 	 WebDriver driver;
+	 WebDriverWait wait;
 	 
 	  public logoutPage (WebDriver driver) {
 		   this .driver=driver;
-		   
+		   wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		    
 	   }
+	  
 	  public void logout() {
-	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    	wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
 	       
 	    } 
 	  
 	  public boolean islogout() {
-		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		  
 		    return wait.until(
 		            ExpectedConditions.visibilityOfElementLocated(loginTitle)
 		    ).isDisplayed();

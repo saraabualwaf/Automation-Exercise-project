@@ -21,17 +21,16 @@ public class ProductsPage {
 	    By productName = By.xpath("//div[@class='product-information']/h2");
 	    By productPrice = By.xpath("//div[@class='product-information']/span/span");
 	    
-	    
+	    WebDriverWait wait ;  
 	    
 	   public ProductsPage (WebDriver driver) {
 		   this .driver=driver;
+		   wait = new WebDriverWait(driver, Duration.ofSeconds(10));  
 		   
 	   }
 	   
 	   public void ProductsSearch (String product) {
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
-		   
-		   
+		 
 		   WebElement Productslinkpage =wait.until(ExpectedConditions.elementToBeClickable(Productslink));
 		   Productslinkpage.click();   
 		    
@@ -46,13 +45,11 @@ public class ProductsPage {
 	   }
 	    
 	   public void  viewproduct () { 
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 		    WebElement view =wait.until(ExpectedConditions.elementToBeClickable( viewproduct));
 		    view.click(); 
 	   }
 	   
 	   public void EnterQuantity(String quantity) {
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 		   
 		   WebElement QUN =wait.until(ExpectedConditions.visibilityOfElementLocated(quantityfield));
 		   QUN.clear();
@@ -60,26 +57,22 @@ public class ProductsPage {
 		   QUN.sendKeys(quantity);
 		}
 	   public void  addToCart()  { 
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 		    WebElement view =wait.until(ExpectedConditions.elementToBeClickable( addtocart));
 		    view.click(); 
 	   }
 	   
 	  
-	   
+	    
 	   public void openCart() {
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 		    WebElement cartopen =wait.until(ExpectedConditions.elementToBeClickable( cart));
 		    cartopen.click(); 
 	   }
 	   
 	   public boolean isProductNameDisplayed() {
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 	        return wait.until(ExpectedConditions.elementToBeClickable( productName)).isDisplayed();
 	    }
 
 	    public boolean isProductPriceDisplayed() {
-	    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 	        return wait.until(ExpectedConditions.elementToBeClickable( productPrice)).isDisplayed(); 
 	    }
    

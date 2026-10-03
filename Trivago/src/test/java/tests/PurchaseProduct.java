@@ -59,7 +59,7 @@ public class PurchaseProduct extends BaseClass{
 				  // Verify order placed
 		        Assert.assertEquals(checkoutPage.sucssesMessage(),"ORDER PLACED!" ); 
 		        
-	    }
+	    } 
 	}             
 		               
 		       
